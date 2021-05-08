@@ -1,0 +1,201 @@
+@font-face {
+    font-family:Anton ;
+    src: url(anton.ttf);
+}
+*{
+    transition: all 0.3s ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Anton", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ;
+}
+.container{
+    width: 1170px;
+    margin: 0px auto;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+ul,li{
+    display: block;
+    padding: 0px;
+    margin: 0;
+}
+.header{
+    background: url(../img/header-bg.jpg) no-repeat  center top / cover;
+    letter-spacing: 0.1em;
+    color: white;
+    height: 900px;
+    position: relative;
+    z-index: 1;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding-top: 57px;
+}
+.logo{
+    margin-right: 69px;
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.menu li{
+    margin-right: 40px;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s;
+}
+.menu li:hover a{
+    color: black;
+}
+.menu li::before{
+    content: " ";
+    background: white;
+    height: 24px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -100px;
+    transition: all .3s;
+    z-index: -1;
+}
+.menu li:hover::before{
+    bottom: 0;
+}
+header .div_phone{
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    width: 190px;
+    align-items: center;
+    height: 36px;
+    transition: all .3s;
+    display: flex;
+    z-index: 2;
+}
+header .div_phone::after{
+    content: " ";
+    height: 36.5px;
+    width: 190px;
+    background: white;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    z-index: -1;
+    color: black;
+    transition: all .3s;
+}
+header .div_phone:hover::after{
+    right: 0;
+}
+header .div_phone:hover img{
+    left: 0;
+}
+header .div_phone:hover .phone{
+    color: black;
+}
+header .div_phone img{
+    position: absolute;
+    left: 200px;
+    width: 35px;
+    transform: scale(0.85);
+}
+header .phone{
+    font-size: 17px;
+    text-decoration: none;
+    right: 0;
+    position: absolute;
+}
+header .under_title{
+    font-size: 30px;
+    margin-top: 216px;
+}
+header .title{
+    margin-top: 3px;
+    font-size: 100px;
+    letter-spacing: normal;
+}
+header a.btn{
+    padding:  17px 47px;
+    border: 1px solid white;
+    margin-top: 19px;
+    text-transform: uppercase;
+    width: 238px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ;
+    z-index: 3;
+    
+}
+header a.btn::before{
+    content: " ";
+    width: 400px;
+    background: white;
+    color: black;
+    height: 60px;
+    display: block;
+    position: absolute;
+    left: -500px;
+    top: 0;
+    transition: all 0.3s ;
+    z-index: -1;
+}
+header a.btn:hover::before{
+    left: 0px;
+    transition: all 0.3s ;
+}
+header a.btn:hover{
+    color: black;
+}
+section{
+    padding-top: 113px;
+}
+section h2{
+    font-size: 50px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+}
+.desc{
+    width: 567px;
+}
+.under_title{
+    font-size: 25px;
+}
+p{
+    margin-top: 19px;
+    font-size: 16px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+}
+.gallery{
+    margin-top: 67px;
+    display: inline-flex;
+}
+.gallery img{
+    margin-right: 29px;
+}
+.footer{
+    margin-top: 114px ;
+    margin-bottom: 80px;
+}
